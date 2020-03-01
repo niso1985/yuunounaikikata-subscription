@@ -14,126 +14,54 @@
 <body>
 <section class="section">
     <div class="container">
+        <h1 class="title">有能な生き方研究所 申し込みページ</h1>
         <div class="columns is-mobile is-multiline has-text-black">
-            <div class="column">
-                <div class="columns is-multiline is-centered has-text-centered">
-                    <div class="column is-two-fifth">
-                        <figure class="image">
-                            <img src="img/SkyVillage_logo.png">
-                        </figure>
-                        <p class="is-size-4 has-text-weight-bold">
-                            SKY VILLAGE メンバーシップ
-                        </p>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <p class="content">
-                            下記項目を記入して、希望のメンバーシップのボタンを押し、決済登録を行ってください。<br/>
-                            ※使用できるカードブランドはVISA, Master, AMEXの3ブランドです。<br/>
-                            ※クレジットカードをお持ちでいない方は下記リンクより、提携先のAMEX様をご紹介いたします。審査含め有利な条件で進めて頂けます。<br/>
-                            <a href="https://forms.gle/zvQ74cRanDQyB552A" target="_blank">・AMEX様紹介リンク</a><br/>
-                            ※カードの審査が不安な方は、下記アプリでデビットカード(プリペイドカード)を作成可能ですので、そちらをご利用ください。<br/>
-                            <a href="https://vandle.jp/" target="_blank">・バンドルカード</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <p class="content">
-                            名前 <input id="name-input" class="input" type="text" placeholder="名前">
-                        </p>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <p class="content">
-                            メールアドレス <input id="email-input" class="input" type="text" placeholder="メールアドレス">
-                        </p>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <p class="content">
-                            参加希望VILLAGE
-                        <div class="select">
-                            <select id="villages">
-                                <option>VILLAGEを選択してください</option>
-                            </select>
-                        </div>
-                        </p>
-                    </div>
-                </div>
+            <div class="column is-10">
+            <p class="content">
+                以下のフォームに入力の上、定期購入ください。<br/>
+                決済完了後、運営側で決済確認が取れ次第、記載頂いたメールアドレス宛てにFacebookグループへの招待メールを送信いたします。</p>
+            <p class="content has-text-danger has-text-weight-semibold	">
+                ※重要 メールアドレスは必ず受信可能なものにしてください。
+                携帯キャリアのメールアドレスの場合、フィルター等の設定により受信不可能なケースが多発しています。
+                予め「yuunounaikikata-subscription.herokuapp.com」ドメインからの送信許可を行っておいてください。<br/>
+                ※重要 カード情報にはカード裏面のCVC番号もお忘れなく入力ください。<br/>
+                ※重要 決済完了後、入会/退会についての連絡は招待メールに記載の運営事務局の者までお願いします。<br/>
+            </p>
 
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <div class="box">
-                            <p class="is-size-5 has-text-weight-bold">VILLAGEコース<br/>
-                                &lt;スタンダードコース&gt;
-                            </p>
-                            <p class="has-text-weight-bold">特典</p>
-                            <div class="content">
-                                <ul>
-                                    <li>完全招待制SKYVILLAGEへの参加</li>
-                                    <li>VILLAGE＝企画の立ち上げサポート</li>
-                                    <li>VILLAGEメンバー限定のイベントへのご招待</li>
-                                    <li>月に1度の企画ブラシュアップ会への参加</li>
-                                    <li>代表龍馬のSKYVILLAGEメンバー限定のVLOGの閲覧権を付与</li>
-                                    <li>代表龍馬の有料メルマガの無料先行閲覧権を付与</li>
-                                </ul>
-                            </div>
-
-                            <div class="columns is-multiline has-text-centered">
-                                <div class="column">
-                                    <button
-                                            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                                            id="checkout-button-1" role="link">
-                                        月額2000円でVILLAGEコースに加入する
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered">
-                    <div class="column is-half">
-                        <div class="box">
-                            <p class="is-size-5 has-text-weight-bold">TOPコース<br/>
-                                &lt;アドバンスコース&gt;
-                            </p>
-                            <p class="has-text-weight-bold">特典</p>
-                            <div class="content is-left">
-                                <ul>
-                                    <li>スタンダードコースの全サービスを利用可能</li>
-                                    <li>代表との2週間に1度の個別打ち合わせ</li>
-                                    <li>SKYVILLAGE公式企画としてSKYVILLAGE内で、運営から直接情報を拡散</li>
-                                    <li>インフルエンサーの獲得の優先サポート</li>
-                                    <li>常時運営メンバーとオフラインでの企画ブラシュアップや質疑応答サービスの利用</li>
-                                    <li>個人的に企画を更にスピード感を持って形にしたい方向けのコースです</li>
-                                </ul>
-                            </div>
-
-                            <div class="columns is-multiline has-text-centered">
-                                <div class="column">
-
-                                    <button
-                                            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                                            id="checkout-button-2" role="link">
-                                        月額5000円でTOPコースに加入する
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="columns is-multiline">
-                    <div class="column  has-text-right">
-                        <a class="is-size-7" href="https://skyvillage.tokyo/notation.html">特定商取引法に基づく表示</a>
-                    </div>
-                </div>
             </div>
         </div>
+
+        <div class="columns is-multiline">
+            <div class="column is-half is-10">
+                <p class="content">
+                    名前 <input id="name-input" class="input" type="text" placeholder="名前">
+                </p>
+            </div>
+        </div>
+        <div class="columns is-multiline">
+            <div class="column is-half is-10">
+                <p class="content">
+                    メールアドレス <input id="email-input" class="input" type="text" placeholder="メールアドレス">
+                </p>
+            </div>
+        </div>
+
+        <div class="columns is-multiline">
+            <div class="column is-10">
+                <button
+                        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                        id="checkout-button-1" role="link">
+                    定期購読申込みへ
+                </button>
+            </div>
+        </div>
+
+        <div class="columns is-multiline">
+            <div class="column has-text-right is-10">
+                <a class="is-size-7" href="https://matsumurahirokatsu.com/%e7%89%b9%e5%ae%9a%e5%95%86%e5%8f%96%e5%bc%95%e6%b3%95%e3%83%bb%e7%89%b9%e5%ae%9a%e9%9b%bb%e5%ad%90%e3%83%a1%e3%83%bc%e3%83%ab%e6%b3%95%e3%81%ab%e5%9f%ba%e3%81%a5%e3%81%8f%e8%a1%a8%e8%a8%98">特定商取引法に基づく表示</a>
+            </div>
+        </div>
+
     </div>
 </section>
 </body>

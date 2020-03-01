@@ -44,7 +44,6 @@ class Application @Inject() (cc: ControllerComponents, dp: DatabaseConfigProvide
     def update(row: CustomerDAO.Row, customerInfo: CustomerInfo): DBIO[Customer] = {
       val ubuilder = new CustomerUpdateParams.Builder
       val u = ubuilder.setName(customerInfo.name)
-        .setDescription(s"参加希望VILLAGE: ${customerInfo.village}")
         .build()
       val c = Customer.retrieve(row.stripeId).update(u)
       Logger.info(s"[createCheckoutSession] retrieve and update customer: $c")
@@ -53,7 +52,6 @@ class Application @Inject() (cc: ControllerComponents, dp: DatabaseConfigProvide
     def make(customerInfo: CustomerInfo): DBIO[Customer] = {
       val cbuilder = new CustomerCreateParams.Builder
       val cparam = cbuilder.setName(customerInfo.name)
-        .setDescription(s"参加希望VILLAGE: ${customerInfo.village}")
         .setEmail(customerInfo.email)
         .build()
       val c = Customer.create(cparam)
