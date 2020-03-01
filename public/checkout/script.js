@@ -1,5 +1,5 @@
 // Create a Checkout Session with the selected plan ID
-var createCheckoutSession = function (name_, email_, village_, plan_) {
+var createCheckoutSession = function (name_, email_, plan_) {
     return fetch("/create-checkout-session", {
         method: "POST",
         headers: {
