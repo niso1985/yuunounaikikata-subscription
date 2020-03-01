@@ -1,4 +1,4 @@
-name := """skyvillage-subscription"""
+name := """yuunounaikikata-subscription"""
 
 version := "1.0-SNAPSHOT"
 
